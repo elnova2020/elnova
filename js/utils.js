@@ -17,3 +17,18 @@ function getRandomNumber(numbers){
 
     return res;
 }
+
+function createLifesCounterText(lifesCounter) {
+
+    var text = '';
+
+    for (var i = 0; i < lifesCounter; i++ ) {
+        text += '😺';
+    }
+
+    if (lifesCounter === 0){
+        text = '🙀 No Lives...';
+    }
+
+    return text;
+}

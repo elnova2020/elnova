@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body onload="initGame()">
-    <h1>Minesweeper</h1>
+    <div class="header">
+        <hr>
+        <h1>Minesweeper</h1>
+    <hr>
+    </div>
+    
     <form action="#" method="post" class="form" id="form">
     <p>Level:&nbsp;
         <label><input type="radio" name="level" value="4" checked="checked"/> Beginner</label>
@@ -20,8 +25,13 @@
     <div class="info-bar">
         <h3>Hidden...</h3>
         <button class="restart-btn" onclick="restart()">🙂</button>
-        <!-- <button onclick="showMines()">Show mines...</button>
-        <button onclick="showAllBoard()">Show board...</button> -->
+        <div class="lives-counter">😺😺😺</div>
+        <div class="hints-bar">
+            <button class='hint' onclick="hintClicked(this)">🔅</button>
+            <button class='hint' onclick="hintClicked(this)">🔆</button>
+            <button class='hint' onclick="hintClicked(this)">🔅</button>
+        </div>
+        
     </div>
     
     <div class="board">

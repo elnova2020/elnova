@@ -1,7 +1,11 @@
 body {
     text-align:center;
     background-color: black;
-    color: white
+    color: rgb(121, 17, 17);
+}
+
+.header {
+  margin-top: 100px
 }
 
 table{
@@ -20,12 +24,50 @@ table{
   }
 
   .restart-btn {
-      margin-bottom: 10px;
-      height: 30px;
+      margin-bottom: 20px;
+      height: 45px;
+      font-size: x-large;
+      background-color: rgb(121, 17, 17);;
+      border-radius: 5px;
   }
 
   .info-bar h3{
     color: black;
   }
+
+  .timer{
+    background-color:rgb(126, 118, 118);
+    margin: auto;
+    width: 300px;
+    padding: 5px;
+    color: rgb(121, 17, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+  }
+
+  .lives-counter {
+    
+    background-color: rgb(121, 17, 17);
+    padding: 2px;
+
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    color: gold;
+    font-size: large;
+  }
+
+  .hints-bar {
+    /* darkgoldenrod */
+    background-color:goldenrod;
+    padding: 2px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(121, 17, 17);
+   
+  }
+
 
   
