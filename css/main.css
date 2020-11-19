@@ -1,0 +1,31 @@
+body {
+    text-align:center;
+    background-color: black;
+    color: white
+}
+
+table{
+    background-color: grey;
+    color: red;
+    margin: auto
+  }
+  
+  .cell {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .restart-btn {
+      margin-bottom: 10px;
+      height: 30px;
+  }
+
+  .info-bar h3{
+    color: black;
+  }
+
+  

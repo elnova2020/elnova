@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="initGame()">
+    <h1>Minesweeper</h1>
+    <form action="#" method="post" class="form" id="form">
+    <p>Level:&nbsp;
+        <label><input type="radio" name="level" value="4" checked="checked"/> Beginner</label>
+        <label><input type="radio" name="level" value="8" /> Medium</label>
+        <label><input type="radio" name="level" value="12" /> Expert</label>
+    </p>
+    </form>
+
+    <div class="timer">00:00</div>
+    <div class="info-bar">
+        <h3>Hidden...</h3>
+        <button class="restart-btn" onclick="restart()">🙂</button>
+    </div>
+    
+    <div class="board">
+    </div>
+    
+    <script src="js/main.js" ></script>
+</body>
+</html>
