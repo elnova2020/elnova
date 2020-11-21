@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body onload="initGame()">
+    
     <div class="header">
         <hr>
         <h1>Minesweeper</h1>
@@ -14,29 +15,40 @@
     </div>
     
     <form action="#" method="post" class="form" id="form">
-    <p>Level:&nbsp;
+    <!-- <p>Level:&nbsp; -->
         <label><input type="radio" name="level" value="4" checked="checked"/> Beginner</label>
         <label><input type="radio" name="level" value="8" /> Medium</label>
         <label><input type="radio" name="level" value="12" /> Expert</label>
-    </p>
+    <!-- </p> -->
     </form>
 
     <div class="timer">00:00</div>
     <div class="info-bar">
-        <h3>Hidden...</h3>
-        <button class="restart-btn" onclick="restart()">🙂</button>
+        <h3></h3>
+        <button class="restart-btn" onclick="initGame()"></button>
         <div class="lives-counter">😺😺😺</div>
         <div class="hints-bar">
             <button class='hint' onclick="hintClicked(this)">🔅</button>
             <button class='hint' onclick="hintClicked(this)">🔆</button>
             <button class='hint' onclick="hintClicked(this)">🔅</button>
         </div>
+        <div class="safe-clicks">
+            <button class="green-btn" onclick="safeClicked(this)">Safe click</button>
+            <button class="orange-btn" onclick="undoClicked()">Undo</button>
+        </div>
         
     </div>
     
     <div class="board">
     </div>
+
+    <button class="green-btn set-mines-btn" onclick="setMinesBtnClicked()">Set mines manually</button>
+
+    <div class="best-score">The best time : <span></span></div>
+    
+    <div class="footer"></div>
     <script src="js/utils.js"></script>
     <script src="js/main.js" ></script>
+    
 </body>
 </html>
