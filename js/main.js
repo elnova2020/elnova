@@ -55,7 +55,13 @@ function initGame() {
     updateLivesCounterText();
     renderHintsButtons();
     document.querySelector(".best-score").style.display = 'block';
-    document.querySelector(".best-score span").innerText = retrieveLevelBestScore() + ' sec';
+    var bestScore = retrieveLevelBestScore();
+
+    if (bestScore !== null) {
+        document.querySelector(".best-score span").innerText = retrieveLevelBestScore() + ' sec';
+    } else {
+        document.querySelector(".best-score span").innerText = 'Good luck !!! 🍀';
+    }
 
     gLastCellClickedCoord = null;
     gMinesCoords = [];
@@ -111,9 +117,9 @@ function resetWinLooseMessage() {
     console.log('Best player is...' + bestPlayerName);
 
     if (bestPlayerName !== null && bestPlayerName !== 'null' && bestPlayerName !== 'undefined') {
-        elInfoMessage.innerText = 'The best player : ' + bestPlayerName;
+        elInfoMessage.innerText = 'The best player : ' + bestPlayerName + ' 🍀';
     } else {
-        elInfoMessage.innerText = 'Welcome && Goooood Luck !!!';
+        elInfoMessage.innerText = 'Welcome && Goooood Luck !!! 🍀';
     }
 }
 
